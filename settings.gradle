@@ -1,0 +1,4 @@
+include ':game_ui'
+include ':game_base'
+include ':app'
+rootProject.name = "Sushi Go"

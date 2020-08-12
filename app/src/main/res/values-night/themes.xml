@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- NIGHT theme -->
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="colorPrimary">@color/bamboo_l_1</item>
+        <item name="colorSecondary">@color/lavander_l_3</item>
+        <item name="android:colorBackground">@color/gray_v</item>
+        <item name="colorError">@color/tomato_l_3</item>
+        <item name="colorGameTable">@color/gray_l_3</item>
+    </style>
+
+</resources>

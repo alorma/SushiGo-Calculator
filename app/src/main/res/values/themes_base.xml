@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">?colorPrimarySurface</item>
+        <item name="android:navigationBarColor">?colorPrimarySurface</item>
+
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SushiGo.Large</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SushiGo.Medium</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SushiGo.Small</item>
+
+        <item name="appBarLayoutStyle">
+            @style/Widget.MaterialComponents.AppBarLayout.PrimarySurface
+        </item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
+        <item name="materialCardViewStyle">@style/Widget.MaterialComponents.CardView</item>
+
+    </style>
+</resources>

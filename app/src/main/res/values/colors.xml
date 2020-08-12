@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="starblue">#167db7</color>
+    <color name="starblue_d_2">#1d668f</color>
+    <color name="starblue_l_3">#c4deec</color>
+    <color name="starblue_v">#86d7f5</color>
+    <color name="soda">#ff6340</color>
+    <color name="soda_d_2">#c0533b</color>
+    <color name="soda_l_3">#ffd7cf</color>
+    <color name="soda_v">#f43e1c</color>
+    <color name="gray_v">#212121</color>
+    <color name="gray_l_3">#e2e5e6</color>
+    <color name="gray_l_4">#f5f5f5</color>
+    <color name="bamboo">#00a550</color>
+    <color name="bamboo_d_2">#0d8147</color>
+    <color name="bamboo_l_3">#bfe8d3</color>
+    <color name="bamboo_l_1">#4cbf84</color>
+    <color name="tomato">#d82626</color>
+    <color name="tomato_d_2">#a42829</color>
+    <color name="tomato_l_3">#f5c9c9</color>
+    <color name="tomato_l_1">#e36767</color>
+    <color name="canary">#f1c40f</color>
+    <color name="canary_d_1">#d3ad13</color>
+    <color name="canary_l_3">#fbf0c2</color>
+    <color name="lavander">#564ffe</color>
+    <color name="lavander_l_3">#d5d3fe</color>
+    <color name="brown">#977A5B</color>
+    <color name="brown_l_3">#D6BB9D</color>
+    <color name="black">#2d3133</color>
+    <color name="white">#ffffff</color>
+</resources>
