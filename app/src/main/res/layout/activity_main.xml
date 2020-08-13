@@ -25,29 +25,55 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.alorma.game_ui.SusiGoCardView
-                android:id="@+id/card1"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp" />
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                app:cardElevation="24dp" />
 
-            <com.alorma.game_ui.SusiGoCardView
-                android:id="@+id/card2"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp" />
+                android:layout_margin="8dp">
 
-            <com.alorma.game_ui.SusiGoCardView
-                android:id="@+id/card3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp" />
+                <com.alorma.game_ui.SusiGoCardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.card.MaterialCardView>
 
-            <com.alorma.game_ui.SusiGoCardView
-                android:id="@+id/card4"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp" />
+                android:layout_margin="8dp">
+
+                <com.alorma.game_ui.SusiGoCardView
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <com.alorma.game_ui.SusiGoCardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <com.alorma.game_ui.SusiGoCardView
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </ScrollView>
 

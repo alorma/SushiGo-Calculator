@@ -13,7 +13,6 @@
             @style/Widget.MaterialComponents.AppBarLayout.PrimarySurface
         </item>
         <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
-        <item name="materialCardViewStyle">@style/Widget.MaterialComponents.CardView</item>
-
+        <item name="materialCardViewStyle">@style/Widget.SushiGo.CardView</item>
     </style>
 </resources>
