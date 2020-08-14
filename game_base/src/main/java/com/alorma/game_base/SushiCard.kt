@@ -1,5 +1,7 @@
 package com.alorma.game_base
 
+import java.security.InvalidParameterException
+
 sealed class SushiCard
 
 sealed class Nigiri : SushiCard() {
@@ -12,3 +14,11 @@ sealed class Nigiri : SushiCard() {
 
 object Tempura : SushiCard()
 object Sashimi : SushiCard()
+
+data class Maki(val numberOfMakis: Int) : SushiCard() {
+    init {
+        if (numberOfMakis !in 1..3) {
+            throw InvalidParameterException("Invalid number of makis (1..3")
+        }
+    }
+}

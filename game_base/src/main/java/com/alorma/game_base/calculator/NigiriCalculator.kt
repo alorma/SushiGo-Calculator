@@ -2,7 +2,7 @@ package com.alorma.game_base.calculator
 
 import com.alorma.game_base.Nigiri
 
-class NigiriCalculator : Calculator<Nigiri> {
+class NigiriCalculator : SinglePlayerCalculator<Nigiri> {
     override fun obtainScore(cards: List<Nigiri>): Int = cards.sumBy { card ->
         val nigiriScore = when (card) {
             is Nigiri.Omelet -> 1
