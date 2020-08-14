@@ -6,6 +6,9 @@ import com.alorma.game_base.PlayerId
 class MakiCalculator : MultiPlayerCalculator<Maki> {
 
     override fun obtainScore(playerId: PlayerId, cards: Map<PlayerId, List<Maki>>): Int {
+        if (cards.isEmpty()) {
+            return 0
+        }
 
         val mapByMakis: Map<PlayerId, Int> = cards.mapValues { entry ->
             entry.value.sumBy { maki -> maki.numberOfMakis }
