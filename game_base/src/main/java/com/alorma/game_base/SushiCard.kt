@@ -16,6 +16,9 @@ object Tempura : SushiCard()
 object Sashimi : SushiCard()
 object Gyoza : SushiCard()
 
+sealed class Dessert : SushiCard()
+object Pudding : Dessert()
+
 data class Maki(val numberOfMakis: Int) : SushiCard() {
     init {
         if (numberOfMakis !in 1..3) {
