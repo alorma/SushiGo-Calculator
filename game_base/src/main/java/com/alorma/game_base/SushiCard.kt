@@ -9,3 +9,5 @@ sealed class Nigiri : SushiCard() {
     data class Salmon(override val hasWasabi: Boolean = false) : Nigiri()
     data class Squid(override val hasWasabi: Boolean = false) : Nigiri()
 }
+
+object Sashimi : SushiCard()
