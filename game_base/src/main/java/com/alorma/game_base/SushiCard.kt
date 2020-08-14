@@ -10,4 +10,5 @@ sealed class Nigiri : SushiCard() {
     data class Squid(override val hasWasabi: Boolean = false) : Nigiri()
 }
 
+object Tempura : SushiCard()
 object Sashimi : SushiCard()
