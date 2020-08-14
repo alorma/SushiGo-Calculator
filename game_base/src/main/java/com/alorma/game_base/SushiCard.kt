@@ -14,6 +14,7 @@ sealed class Nigiri : SushiCard() {
 
 object Tempura : SushiCard()
 object Sashimi : SushiCard()
+object Gyoza : SushiCard()
 
 data class Maki(val numberOfMakis: Int) : SushiCard() {
     init {
