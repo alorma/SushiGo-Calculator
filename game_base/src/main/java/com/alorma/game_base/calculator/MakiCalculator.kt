@@ -6,7 +6,7 @@ import com.alorma.game_base.PlayerId
 class MakiCalculator : MultiPlayerCalculator<Maki> {
 
     override fun obtainScore(playerId: PlayerId, cards: Map<PlayerId, List<Maki>>): Int {
-        if (cards.isEmpty()) {
+        if (cards.toList().flatMap { it.second }.isEmpty()) {
             return 0
         }
 

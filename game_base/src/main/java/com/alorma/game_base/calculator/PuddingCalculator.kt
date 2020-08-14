@@ -6,7 +6,7 @@ import com.alorma.game_base.Pudding
 class PuddingCalculator : MultiPlayerCalculator<Pudding> {
 
     override fun obtainScore(playerId: PlayerId, cards: Map<PlayerId, List<Pudding>>): Int {
-        if (cards.isEmpty()) {
+        if (cards.toList().flatMap { it.second }.isEmpty()) {
             return 0
         }
 
