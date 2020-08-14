@@ -1,12 +1,21 @@
 package com.alorma.game_base
 
-class Game(private val numberOfPlayers: Int) {
+class Game(private val players: List<Player>) {
 
-    fun getNumberOfCardsByRound() = when (numberOfPlayers) {
-        2 -> 10
-        3 -> 9
-        4 -> 8
-        5 -> 7
-        else -> throw IndexOutOfBoundsException("Max 5 players are allowed")
+    private var currentRound: Round = Round.FIRST
+
+    private val scoreCache: MutableMap<PlayerId, MutableList<PlayerScore>> = mutableMapOf()
+
+    fun updateScore(player: Player, score: Int) {
+        scoreCache.getOrPut(player.id) { mutableListOf() }.add(
+            PlayerScore(currentRound, score)
+        )
+    }
+
+    fun calculateWinner(): Player {
+        val winnerPlayer = scoreCache
+            .mapValues { entry -> entry.value.sumBy { playerScore -> playerScore.score } }
+            .maxBy { entry -> entry.value }!!.key
+        return players.first { it.id == winnerPlayer }
     }
 }
